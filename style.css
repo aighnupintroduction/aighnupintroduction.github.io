@@ -1,6 +1,7 @@
 body {
     background: url("anime sky.gif") no-repeat fixed;
     background-size: cover;
+    overflow: hidden;
 }
 
 
