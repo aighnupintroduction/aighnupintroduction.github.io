@@ -2,7 +2,7 @@ body {
     overflow: hidden;
     background: url("anime sky.gif") no-repeat fixed;
     background-size: cover;
-    height: 100%;
+    max-width: 100%;
 }
 
 
