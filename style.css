@@ -1,0 +1,80 @@
+body {
+    background: url("anime sky.gif") no-repeat fixed;
+    background-size: cover;
+}
+
+
+.card-container {
+    width: 200px;
+    height: 300px;
+    background: aliceblue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 15px whitesmoke;
+    border-radius: 45px;
+    opacity: .5;
+    transition: opacity 1s, box-shadow 1s;
+}
+
+.profile-pic {
+    position: relative;
+    left: 23%;
+    opacity: .5;
+    transition: opacity 1s;
+}
+
+.profile-pic img {
+    border-left: rgb(255, 182, 193, .8) solid 5px;
+    margin-top: 10px;
+    padding-right: 10px;
+    background-color: rgb(255, 182, 193, .3);
+}
+
+.desc>p{
+    font-size: .8em;
+    font-family: "Manrope", monospace, sans-serif;
+    line-height: 15px;
+    position: absolute;
+    padding: 10px;
+    text-shadow: 0px 0px 1px lightcoral;
+    color: rgb(209, 149, 158);
+    transition: text-shadow 1s;
+}
+
+.hover-me {
+    position: absolute;
+    font-family: "manrope", monospace;
+    top: -25%;
+    left: 10%;
+    font-size: 24px;
+    background: linear-gradient(to right,pink,coral) fixed;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px white;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+
+.card-container:hover{
+    box-shadow: 0px 0px 30px whitesmoke;
+    opacity: .8;
+}
+
+.card-container:hover .profile-pic{
+    opacity: 1;
+}
+
+
+.card-container:hover .desc>p {
+    text-shadow: 0px 0px 5px lightcoral;
+}
+
+.card-container:hover .hover-me{
+    opacity: 0;
+}
